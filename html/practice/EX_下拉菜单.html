@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"content="text/html;charset=utf-8"/>
+<title></title>
+<style type="text/css">
+body {background:#ebebeb;width:900px;margin:20px auto;color:#666;}
+a {color:#333;}
+/*定义菜单外框样式*/
+#nav{
+	margin:0;
+	padding:7px 6px 0;
+	line-height:100%;/*实现菜单项垂直居中*/
+	/*设计圆角外框及其阴影效果*/
+	border-radius:2em;
+	-webkit-border-radius:2em;
+	-moz-border-radius:2em;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,4);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,4);
+	/*下面样式将为菜单外框添加渐变背景效果*/
+	background:#8b8b8b;/*兼容不支持CSS3浏览器*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9',endColorstr='#7a7a7a');/*兼容IE*/
+	background:-moz-linear-gradient(top,#a9a9a9,#7a7a7a);/*兼容Firefox 3.6+ */
+	border:solid 1px #6d6d6d;
+}
+#nav li {
+	margin:0 5px;
+	padding:0 0 8px;
+	float:left;
+	position:relative;
+	list-style:none;
+}
+
+#nav a {
+	font-weight:bold;
+	color:#e7e5e5;
+	text-decoration:none;
+	display:block;
+	padding:8px 20px;
+	margin:0;
+	-webkit-border-radius:1.6em;
+	-moz-border-radius:1.6em;
+	text-shadow:0 1px 1px rgba(0,0,0,.3);
+}
+
+#nav .current a,#nav li:hover>a {
+	background:#d1d1d1;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb',endColorstr='#alalal')
+	background:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#a1a1a1));
+	background:
+}
+</head>
+</html>

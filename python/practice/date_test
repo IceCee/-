@@ -1,0 +1,14 @@
+#! usr/bin/env python
+
+import time
+import datetime
+
+data1 = raw_input('Write your Date(yyyy-mm-dd):')
+data = time.strptime(data1,"%Y-%m-%d")
+datimeStarp = int(time.mktime(data))
+days = raw_input('Write your Days:')
+for i in range(int(days)):
+    date1 = datetime.datetime.utcfromtimestamp(datimeStarp)
+    dates = (date1+datetime.timedelta(days=i+1))
+    datas = dates.strftime("%Y-%m-%d") 
+    print("%s" % (datas))
